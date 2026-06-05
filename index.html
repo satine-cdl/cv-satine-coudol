@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clémence Durand | Art Direction — Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: white !important; margin: 0 !important; }
+            .page-container { 
+                margin: 0 !important; 
+                padding: 0 !important; 
+                box-shadow: none !important; 
+                width: 100% !important; 
+                max-width: none !important;
+                border: none !important;
+            }
+            @page {
+                size: A4 portrait;
+                margin: 0;
+            }
+        }
+        /* A4 proportions for desktop preview */
+        @media screen and (min-width: 1024px) {
+            .page-container {
+                width: 210mm;
+                min-height: 297mm;
+                height: auto;
+            }
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "surface-container-low": "#f5f3f3",
+                        "surface-container-high": "#e9e8e7",
+                        "on-secondary-fixed": "#1a1c1b",
+                        "on-primary-fixed-variant": "#474746",
+                        "on-surface-variant": "#444748",
+                        "on-secondary": "#ffffff",
+                        "background": "#fbf9f8",
+                        "tertiary": "#000000",
+                        "on-tertiary-container": "#bd6f58",
+                        "primary-fixed": "#e5e2e1",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fbf9f8",
+                        "on-primary-fixed": "#1c1b1b",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1b1c1c",
+                        "secondary": "#5e5e5d",
+                        "outline": "#747878",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#efeded",
+                        "surface": "#fbf9f8",
+                        "on-secondary-container": "#626361",
+                        "inverse-primary": "#c8c6c5",
+                        "surface-variant": "#e4e2e2",
+                        "primary": "#000000",
+                        "on-tertiary-fixed": "#3a0a00",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-dim": "#dbdad9",
+                        "on-tertiary-fixed-variant": "#733521",
+                        "tertiary-container": "#3a0a00",
+                        "secondary-container": "#e0dfde",
+                        "surface-container-highest": "#e4e2e2",
+                        "secondary-fixed": "#e3e2e0",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#1c1b1b",
+                        "secondary-fixed-dim": "#c7c6c5",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#464746",
+                        "tertiary-fixed-dim": "#ffb59f",
+                        "outline-variant": "#c4c7c7",
+                        "on-surface": "#1b1c1c",
+                        "surface-tint": "#5f5e5e",
+                        "on-primary-container": "#858383",
+                        "inverse-surface": "#303031",
+                        "tertiary-fixed": "#ffdbd1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "48px",
+                        "gutter-mobile": "16px",
+                        "stack-sm": "8px",
+                        "stack-md": "24px",
+                        "section-gap": "80px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "meta": ["Hanken Grotesk"],
+                        "display": ["Libre Caslon Text"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "meta": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "display": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "400"}],
+                        "body-md": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+                        "body-lg": ["17px", {"lineHeight": "26px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface-container-low text-on-background font-body-md selection:bg-primary selection:text-white antialiased">
+<!-- Controls Overlay (Web Only) -->
+<div class="no-print fixed top-6 right-6 z-50">
+<button class="group flex items-center gap-3 bg-primary text-background px-6 py-3 shadow-xl hover:translate-y-[-2px] transition-all duration-300" onclick="window.print()">
+<span class="material-symbols-outlined">print</span>
+<span class="font-label-caps text-label-caps uppercase">Print CV</span>
+</button>
+</div>
+<!-- Document Container (A4 Portrait) -->
+<main class="mx-auto my-0 md:my-12 bg-background shadow-2xl relative overflow-hidden page-container border border-outline-variant/20 flex flex-col">
+<!-- Header: Editorial Masthead Style -->
+<header class="pt-16 px-16 pb-12 border-b border-primary/10">
+<div class="grid grid-cols-12 items-end gap-8">
+<div class="col-span-8">
+<h1 class="font-headline-lg text-[44px] leading-[1] text-primary uppercase tracking-tight mb-4">
+                        Clémence Durand
+                    </h1>
+<div class="h-px w-24 bg-primary mb-4"></div>
+<p class="font-label-caps text-label-caps text-secondary uppercase max-w-sm">
+                        Art Direction — Graphic Design <br/>
+<span class="opacity-60 text-[10px]">Internship Application 2024</span>
+</p>
+</div>
+<div class="col-span-4 text-right">
+<div class="font-meta text-meta text-secondary space-y-1">
+<p>Paris, France</p>
+<p class="text-primary font-bold">clemence.durand@email.com</p>
+<p>+33 6 00 00 00 00</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Body Grid -->
+<div class="flex-grow p-16 grid grid-cols-12 gap-12">
+<!-- Left Column: Primary Content -->
+<div class="col-span-8 space-y-12">
+<!-- Statement -->
+<section>
+<p class="font-headline-md text-headline-md text-primary leading-tight italic">
+                        "Driven by a demand for detail and a passion for minimalist aesthetics, I design visual universes that blend editorial narrative and graphic rigor."
+                    </p>
+</section>
+<!-- Professional Experience Section -->
+<section class="space-y-8">
+<div class="flex items-center gap-4">
+<h2 class="font-label-caps text-label-caps text-primary uppercase whitespace-nowrap">Professional Experience</h2>
+<div class="h-px w-full bg-outline-variant/30"></div>
+</div>
+<div class="space-y-10">
+<!-- Exp 1 -->
+<div class="group relative">
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-headline-md text-[20px] text-primary">Creative Project Manager</h3>
+<span class="font-meta text-[13px] text-secondary tabular-nums">2023 — Present</span>
+</div>
+<p class="font-label-caps text-[11px] text-secondary/70 uppercase tracking-widest mb-4">Agence FG, Paris</p>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant max-w-[90%]">
+<li class="flex gap-4">
+<span class="mt-2.5 h-[1px] w-3 bg-primary flex-shrink-0"></span>
+<span>Creative direction for 360° luxury and lifestyle campaigns.</span>
+</li>
+<li class="flex gap-4">
+<span class="mt-2.5 h-[1px] w-3 bg-primary flex-shrink-0"></span>
+<span>Coordination of creative teams (AD, photographers, motion designers).</span>
+</li>
+<li class="flex gap-4">
+<span class="mt-2.5 h-[1px] w-3 bg-primary flex-shrink-0"></span>
+<span>Iconographic monitoring and development of strategic moodboards.</span>
+</li>
+</ul>
+</div>
+<!-- Exp 2 -->
+<div class="group relative">
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-headline-md text-[20px] text-primary">PR Assistant</h3>
+<span class="font-meta text-[13px] text-secondary tabular-nums">2021 — 2022</span>
+</div>
+<p class="font-label-caps text-[11px] text-secondary/70 uppercase tracking-widest mb-4">API RP, Paris</p>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant max-w-[90%]">
+<li class="flex gap-4">
+<span class="mt-2.5 h-[1px] w-3 bg-primary flex-shrink-0"></span>
+<span>Design of visual materials for press kits.</span>
+</li>
+<li class="flex gap-4">
+<span class="mt-2.5 h-[1px] w-3 bg-primary flex-shrink-0"></span>
+<span>Public relations management for clients in the architecture sector.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Education Section -->
+<section class="space-y-8">
+<div class="flex items-center gap-4">
+<h2 class="font-label-caps text-label-caps text-primary uppercase whitespace-nowrap">Education</h2>
+<div class="h-px w-full bg-outline-variant/30"></div>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<div class="flex justify-between items-start">
+<div class="max-w-[70%]">
+<h4 class="font-body-lg font-bold text-primary">Master in Art Direction</h4>
+<p class="font-meta text-meta text-secondary">ISCOM, Paris</p>
+</div>
+<span class="font-meta text-[13px] text-secondary tabular-nums">2022 — 2024</span>
+</div>
+<div class="flex justify-between items-start">
+<div class="max-w-[70%]">
+<h4 class="font-body-lg font-bold text-primary">B.A. Visual Communication</h4>
+<p class="font-meta text-meta text-secondary">Hochschule für Technik und Wirtschaft, Berlin</p>
+</div>
+<span class="font-meta text-[13px] text-secondary tabular-nums">2021 (Exchange)</span>
+</div>
+<div class="flex justify-between items-start">
+<div class="max-w-[70%]">
+<h4 class="font-body-lg font-bold text-primary">Bachelor in Brand Design</h4>
+<p class="font-meta text-meta text-secondary">ISCOM, Paris</p>
+</div>
+<span class="font-meta text-[13px] text-secondary tabular-nums">2019 — 2022</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Sidebar -->
+<div class="col-span-4 space-y-12 border-l border-outline-variant/20 pl-8">
+<!-- Profile Detail -->
+<section class="space-y-4">
+<h2 class="font-label-caps text-label-caps text-primary uppercase border-b border-primary pb-2">Profile</h2>
+<p class="font-body-md text-secondary leading-relaxed">
+                        Versatile creative, I support brands in defining their visual identity through an analytical and refined approach.
+                    </p>
+</section>
+<!-- Expertise -->
+<section class="space-y-6">
+<h2 class="font-label-caps text-label-caps text-primary uppercase border-b border-primary pb-2">Expertise</h2>
+<div class="flex flex-col gap-2">
+<span class="font-meta text-[13px] text-primary uppercase tracking-wider">• Adobe Creative Suite</span>
+<span class="font-meta text-[13px] text-primary uppercase tracking-wider">• Figma / UI Design</span>
+<span class="font-meta text-[13px] text-primary uppercase tracking-wider">• Branding &amp; Identity</span>
+<span class="font-meta text-[13px] text-primary uppercase tracking-wider">• Layout &amp; Typography</span>
+<span class="font-meta text-[13px] text-primary uppercase tracking-wider">• Photography</span>
+</div>
+</section>
+<!-- Languages -->
+<section class="space-y-6">
+<h2 class="font-label-caps text-label-caps text-primary uppercase border-b border-primary pb-2">Languages</h2>
+<div class="space-y-4">
+<div class="space-y-1">
+<div class="flex justify-between text-meta uppercase tracking-tighter">
+<span class="text-secondary">French</span>
+<span class="text-primary font-bold">Native</span>
+</div>
+<div class="h-[1px] bg-primary w-full"></div>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between text-meta uppercase tracking-tighter">
+<span class="text-secondary">English</span>
+<span class="text-primary font-bold">Bilingual</span>
+</div>
+<div class="h-[1px] bg-outline-variant w-full relative">
+<div class="absolute inset-0 bg-primary w-[90%]"></div>
+</div>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between text-meta uppercase tracking-tighter">
+<span class="text-secondary">German</span>
+<span class="text-primary font-bold">Interm.</span>
+</div>
+<div class="h-[1px] bg-outline-variant w-full relative">
+<div class="absolute inset-0 bg-primary w-[65%]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vertical Mark -->
+<div class="pt-24 opacity-5 pointer-events-none select-none">
+<h5 class="font-display text-[140px] leading-none text-primary text-center">CD</h5>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="mt-auto border-t border-outline-variant/20 py-8 px-16 flex justify-between items-center bg-surface-container-lowest">
+<p class="font-label-caps text-[10px] text-secondary/60 tracking-[0.2em]">© 2024 PORTFOLIO — CURATED WORK</p>
+<p class="font-label-caps text-[10px] text-secondary/60 tracking-[0.2em] uppercase">Confidential Document</p>
+</footer>
+<!-- Side Decoration (Web Only) -->
+<div class="no-print fixed left-8 top-1/2 -rotate-90 origin-left hidden xl:block">
+<span class="font-label-caps text-label-caps text-secondary/20 uppercase tracking-[0.5em]">Creative Director Portfolio // 2024</span>
+</div>
+</main>
+<script>
+        // Smooth print trigger
+        window.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+                // Let the browser handle the default print dialog
+            }
+        });
+    </script>
+</body></html>
